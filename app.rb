@@ -8,6 +8,6 @@ get('/form') do
 end
 
 get('/result') do
-  @sentence = params.fetch('sentence')
+  @changed_sentence = params.fetch('sentence').title_case
   erb(:result)
 end
