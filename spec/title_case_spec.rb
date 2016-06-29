@@ -1,5 +1,6 @@
 require("rspec")
 require("sinatra")
+require('capybara/rspec')
 require("title_case.rb")
 
 describe("String#title_case") do
